@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
 
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable(test_DM include/main.cpp
+add_executable(test_DM main.cpp
         include/headers.h
         include/pixelsmap.h
         include/pixelsmap.cpp
