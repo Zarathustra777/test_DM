@@ -16,7 +16,8 @@
 В приложении тестовый файл «test.png», совмещающий в себе битые пиксели и эмуляцию полезного сигнала.
 ![alt text][logo]
 
-[logo]:https://i.imgur.com/qX02KdD.png "View in the Editor" =250x250
+[logo]:https://i.imgur.com/qX02KdD.png "View in the Editor"
+<img src="[image name](https://i.imgur.com/qX02KdD.png)" alt= “” width="200" height="300">
 Реальный тестовый файл в формате TIFF 16 bit – «test real.tiff»
 
 ## Инструментарий
