@@ -88,5 +88,5 @@ Realtime коррекция осуществляется на GPU (OpenGL), ко
 ```cmake
 cmake .
 make
-.test_DM test.png
+./test_DM test.png
 ```
