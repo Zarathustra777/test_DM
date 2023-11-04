@@ -87,7 +87,7 @@ Realtime коррекция осуществляется на GPU (OpenGL), ко
 Пример сборки и запуска
 Для работы необходимо установить OpenCV 
 
-[a link](https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html)
+[Installation in Linux](https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html)
 
 ```cmake
 cmake .
