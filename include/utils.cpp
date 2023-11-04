@@ -1,9 +1,10 @@
 #include "utils.h"
+#include "constant.h"
 #include <fstream>
 namespace Utils{
 
     float linInterp2D(int p1,int p2,int x){
-        float w = std::abs(x - p1)  / std::abs(p2 - p1);
+        float w = static_cast<float>(std::abs(x - p1))  / static_cast<float>(std::abs(p2 - p1));
         return w;
     }
 
@@ -31,5 +32,9 @@ namespace Utils{
         else{
             std::cerr << "Couldn't open config file for reading.\n";
         }
+    }
+    bool  checkBounds(int i,int j,cv::Point2i start, cv::Mat_<uchar> Pixel){
+       return  i >= 0 && j >= 0 && i < Pixel.rows && j < Pixel.cols &&
+        checkMaxDistance(i, start.y, j, start.x);
     }
 }//end Utils

@@ -1,10 +1,8 @@
-#ifndef CONSTANT_H
-
-#define CONSTANT_H
+#pragma once
 
 namespace constant {
-    static  int MAX_DISTANCE ;      //TODO
-    static  int DISTANCE_DIFFERENCE_THRESHOLD ;//TODO
-    static  int bug_pixel = 255 * 0.50f;   //TODO
+    static  int MAX_DISTANCE;
+    static  int DISTANCE_DIFFERENCE_THRESHOLD;
+    static  int bug_pixel = 255 * 0.50f;
 }
-#endif //CONSTANT_H
+

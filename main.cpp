@@ -1,5 +1,11 @@
-#include <fstream>
-#include "include/headers.h"
+#include <iostream>
+#include <string>
+
+#include <opencv2/core.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+
+#include "include/pixelsmap.h"
 #include "include/utils.h"
 
 int main(int argc, char** argv ){

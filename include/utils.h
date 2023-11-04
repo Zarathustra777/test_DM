@@ -1,6 +1,11 @@
-#ifndef UTILS_H
-#define UTILS_H
-#include "headers.h"
+#pragma once
+
+#include <string>
+#include <opencv2/core.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/opencv.hpp>
+
 namespace Utils{
     float linInterp2D(int p1,int p2,int x);
 
@@ -13,5 +18,7 @@ namespace Utils{
     bool checkDistanceDiffthreshold(double len1, double len2);
 
     void setConstants(std::string & fileName);
+
+    bool  checkBounds(int i,int j, cv::Point2i start, cv::Mat_<uchar> Pixel);
 }
-#endif //UTILS_H
+

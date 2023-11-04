@@ -11,6 +11,7 @@ add_executable(test_DM main.cpp
         include/pixelsmap.h
         include/pixelsmap.cpp
         include/utils.cpp
+        include/constant.h
 
 )
 

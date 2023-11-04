@@ -1,6 +1,8 @@
-#ifndef PIXELSMAP_H
-#define PIXELSMAP_H
-#include "headers.h"
+#pragma once
+
+#include <iostream>
+#include <string>
+#include <opencv2/opencv.hpp>
 
 struct BugPixel{
     cv::Point2i p0;     //mid
@@ -8,7 +10,7 @@ struct BugPixel{
     cv::Point2i p2;     //right
     cv::Point2i p3;     //bot
     cv::Point2i p4;     //top
-    //weighting Coefficients for Pi
+    //point weights p1,p2,p3,p4
     float w1 = 0;
     float w2 = 0;
     float w3 = 0;
@@ -29,4 +31,4 @@ void weightingCoefficients(std::vector<BugPixel> & pool);
 
 cv::Mat fixBugPixels(std::vector<BugPixel> & pool, cv::Mat & inPutImg);
 
-#endif //PIXELSMAP_H
+
